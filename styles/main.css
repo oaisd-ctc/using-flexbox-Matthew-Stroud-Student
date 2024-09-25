@@ -1,0 +1,59 @@
+#main-flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100px;
+    width: 400px;
+}
+/*This makes the class main-flex-container into a flex box*/
+
+#main-flex-container > div {
+    margin: 10px;
+    height: 50px;
+    width: 50px;
+    background-color: #0f5cd9;
+    transition: 200ms;
+}
+/*This changes how the divs in the #main-flex-container will look*/
+
+#second-flex-container {
+    display: flex;
+    width: 100%;
+    height: 400px;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+/*This turns the class second-flex-container into a flex box*/
+
+#second-flex-container > div {
+    height: 200px;
+    width: 200px;
+    background-color: red;
+}
+/*This changes how the div looks in #second-flex-container*/
+
+#main-flex-container > div:last-of-type {
+    background-color: #4287f5;
+}
+/*This makes changes to the last element in the class*/
+
+#main-flex-container > div:nth-child(even) {
+    background-color: #0b45a1;
+}
+/*This makes changes to the even elements in the class*/
+
+#main-flex-container > div:hover {
+    background-color: #e62222;
+    width: 70px;
+}
+/*This changes the color and width of the div element you are hovering over*/
+
+#main-flex-container > div:active {
+    transition: 50ms;
+    background-color: #ff5959;
+    width: 77px;
+    height: 55px;
+}
+/*This changes the color, width, and height of the div element you are activating by clicking*/
